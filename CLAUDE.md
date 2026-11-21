@@ -130,3 +130,8 @@ From [docs/decisions/0007-testing.md](docs/decisions/0007-testing.md):
 - Mock HTTP with **axios-mock-adapter**; build test data with **Rosie factories** in `data/__factories__/`
 - Test non-obvious behavior (error states, interactions, corner cases) — not happy-path rendering
 - **Avoid snapshots** for complex components; they're too brittle. Snapshots are acceptable for data/redux tests and tiny isolated components.
+## Local snapshot — 2026-11-21
+
+This fork preserves the local Devstack integration. Setup and exact dependency revisions are recorded in
+[the snapshot manifest](https://github.com/brobro10000/devstack/tree/chore/devstack-personalized-search-snapshot-20261121/snapshot).
+Credentials, indexed course information, artwork, and learner state are excluded. Original licenses remain in force.
